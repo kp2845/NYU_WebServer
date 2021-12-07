@@ -1,4 +1,4 @@
-# import socket module
+# import socket module. Found this by clicking on the box in PyCharm. Still need to figure out why this happened.
 from socket import *
 # In order to terminate the program
 import sys
@@ -39,7 +39,7 @@ def webServer(port=13331):
       except IOError:
         # Send response message for file not found (404)
         #Fill in start
-        connectionSocket.send('HTTP/1.1 400 Not Found\r\n'.encode())
+        connectionSocket.send('HTTP/1.1 404 Not Found\r\n'.encode())
         #print('Here is the 404 Not Found message')
         #Fill in end
 
